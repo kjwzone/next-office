@@ -1,0 +1,24 @@
+{
+  "name": "next-office",
+  "productName": "다음오피스",
+  "version": "0.1.0",
+  "description": "HWPX 문서를 작성하고 저장하고 인쇄하는 한글 문서 에디터",
+  "private": true,
+  "license": "Apache-2.0",
+  "main": "src/main/main.js",
+  "scripts": {
+    "build": "node scripts/build-studio.mjs",
+    "make-blank": "node scripts/make-blank.mjs",
+    "start": "npm run build && electron .",
+    "test": "npm run build && node --test \"tests/*.test.js\""
+  },
+  "devDependencies": {
+    "@noble/hashes": "2.4.0",
+    "@rhwp/core": "file:vendor/rhwp-core",
+    "@rhwp/editor": "0.8.7",
+    "canvaskit-wasm": "0.42.0",
+    "electron": "45.2.1",
+    "playwright-core": "1.58.2",
+    "vite": "8.3.5"
+  }
+}
